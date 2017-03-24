@@ -1,0 +1,19 @@
+exports[`test Routing page snapshot teste 1`] = `
+<div>
+  <h3>
+    Routing is working !
+  </h3>
+  <h3>
+    Always on my mind
+  </h3>
+  <h3>
+    the days of thunder
+  </h3>
+  <h3>
+    Whatever the case might be
+  </h3>
+  <h3>
+    The vanguard was advancing
+  </h3>
+</div>
+`;

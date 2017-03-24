@@ -2,14 +2,15 @@ const path = require('path')
 
 module.exports = {
   context: __dirname,
-  entry: './js/app.js',
+  entry: './js/App.js',
   devtool: 'source-map',
   output: {
     path: path.join(__dirname, '/public'),
     filename: 'bundle.js'
   },
   devServer: {
-    publicPath: path.join(__dirname, '/public')
+    publicPath: path.join(__dirname, '/public'),
+    historyApiFallback: true
   },
   resolve: {
     extensions: ['.js', '.json']

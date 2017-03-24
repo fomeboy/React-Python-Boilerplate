@@ -1,14 +1,18 @@
 import React from 'react'
 import { render } from 'react-dom'
-import TextComponent from './TextComponent.js'
+import { BrowserRouter, Route } from 'react-router-dom'
+import Landing from './Landing.js'
+import RoutingPage from './RoutingPage.js'
 
 const App = React.createClass({
   render () {
     return (
-      <div className='app'>
-        <h1>Welcome to React!</h1>
-        <TextComponent text='I am a text component' />
-      </div>
+      <BrowserRouter>
+        <div className='app'>
+          <Route exact path='/' component={Landing} />
+          <Route path='/testRoute' component={RoutingPage} />
+        </div>
+      </BrowserRouter>
     )
   }
 })
