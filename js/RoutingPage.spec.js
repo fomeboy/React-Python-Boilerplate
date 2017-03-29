@@ -16,3 +16,8 @@ test('Routing page enzyme test', () => {
   const tree = shallowToJson(component)
   expect(tree).toMatchSnapshot()
 })
+
+test('Test number of rendered components', () => {
+  const component = shallow(<RoutingPage/>)
+  expect(5).toEqual(component.find('h3').length)
+})

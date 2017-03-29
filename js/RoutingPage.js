@@ -27,7 +27,7 @@ const RoutingPage = React.createClass({
   render () {
     return (
       <div>
-        <h3>Routing is working !</h3>
+        <h3>{`Route ${this.props.match.path} is working!`}</h3>
         {data.map((item, i) => {
           return (
             <h3 key={i}>{item.value}</h3>

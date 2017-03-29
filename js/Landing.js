@@ -1,5 +1,4 @@
 import React from 'react'
-import TextComponent from './TextComponent.js'
 import { Link } from 'react-router-dom'
 
 const Landing = React.createClass({
@@ -7,8 +6,10 @@ const Landing = React.createClass({
     return (
       <div>
         <h2>Welcome to React/Python boilerplate!</h2>
-        <TextComponent text='I am a text component'/>
         <Link to='/testRoute'>Navigate to another url</Link>
+        <br/>
+        <br/>
+        <Link to='/reduxPage'>Test redux component</Link>
       </div>
     )
   }
