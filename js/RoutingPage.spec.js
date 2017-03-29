@@ -6,18 +6,19 @@ import { shallow } from 'enzyme'
 import { shallowToJson } from 'enzyme-to-json'
 
 test('Routing page snapshot test', () => {
-  const component = renderer.create(<RoutingPage/>)
+  // <Link> context stub passed as prop
+  const component = renderer.create(<RoutingPage match={{path: '/testRoute'}}/>)
   const tree = component.toJSON()
   expect(tree).toMatchSnapshot()
 })
 
 test('Routing page enzyme test', () => {
-  const component = shallow(<RoutingPage/>)
+  const component = shallow(<RoutingPage match={{path: '/testRoute'}}/>)
   const tree = shallowToJson(component)
   expect(tree).toMatchSnapshot()
 })
 
 test('Test number of rendered components', () => {
-  const component = shallow(<RoutingPage/>)
+  const component = shallow(<RoutingPage match={{path: 'testRoute'}}/>)
   expect(5).toEqual(component.find('h3').length)
 })

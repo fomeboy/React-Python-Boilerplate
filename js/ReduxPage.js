@@ -30,7 +30,7 @@ const ReduxPage = React.createClass({
   }
 })
 
-const mapStateToProps = (state) => {
+const mapStateToProps = (state, ownProps) => {
   return {
     textVal: state.textVal,
     asyncVal: state.asyncVal

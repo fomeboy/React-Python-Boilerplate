@@ -12101,7 +12101,7 @@ var ReduxPage = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
   }
 });
 
-var mapStateToProps = function mapStateToProps(state) {
+var mapStateToProps = function mapStateToProps(state, ownProps) {
   return {
     textVal: state.textVal,
     asyncVal: state.asyncVal
@@ -12121,19 +12121,19 @@ var mapStateToProps = function mapStateToProps(state) {
 
 var data = [{
   'key': 1,
-  'value': 'Always on my mind',
+  'value': 'Item 1',
   'year': 1970
 }, {
   'key': 2,
-  'value': 'the days of thunder',
+  'value': 'Item 2',
   'year': 1976
 }, {
   'key': 3,
-  'value': 'Whatever the case might be',
+  'value': 'Item 3',
   'year': 1990
 }, {
   'key': 4,
-  'value': 'The vanguard was advancing',
+  'value': 'Item 4',
   'year': 2010
 }];
 
@@ -12146,7 +12146,7 @@ var RoutingPage = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
       __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
         'h3',
         null,
-        'Route ' + this.props.match.path + ' is working!'
+        'Route ' + this.props.match.path + ' is Working!'
       ),
       data.map(function (item, i) {
         return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
@@ -13138,7 +13138,6 @@ var setTextVal = function setTextVal(state, action) {
 
 var setAsyncData = function setAsyncData(state, action) {
   var newState = {};
-  console.log(action.val);
   Object.assign(newState, state, { asyncVal: action.val });
   return newState;
 };

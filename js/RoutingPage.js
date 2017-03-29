@@ -3,22 +3,22 @@ import React from 'react'
 const data = [
   {
     'key': 1,
-    'value': 'Always on my mind',
+    'value': 'Item 1',
     'year': 1970
   },
   {
     'key': 2,
-    'value': 'the days of thunder',
+    'value': 'Item 2',
     'year': 1976
   },
   {
     'key': 3,
-    'value': 'Whatever the case might be',
+    'value': 'Item 3',
     'year': 1990
   },
   {
     'key': 4,
-    'value': 'The vanguard was advancing',
+    'value': 'Item 4',
     'year': 2010
   }
 ]
@@ -27,7 +27,7 @@ const RoutingPage = React.createClass({
   render () {
     return (
       <div>
-        <h3>{`Route ${this.props.match.path} is working!`}</h3>
+        <h3>{`Route ${this.props.match.path} is Working!`}</h3>
         {data.map((item, i) => {
           return (
             <h3 key={i}>{item.value}</h3>

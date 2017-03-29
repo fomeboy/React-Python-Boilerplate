@@ -13,7 +13,6 @@ const setTextVal = (state, action) => {
 
 const setAsyncData = (state, action) => {
   const newState = {}
-  console.log(action.val)
   Object.assign(newState, state, {asyncVal: action.val})
   return newState
 }
