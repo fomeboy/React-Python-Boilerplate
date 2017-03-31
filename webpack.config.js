@@ -6,7 +6,8 @@ module.exports = {
   devtool: 'source-map',
   output: {
     path: path.join(__dirname, '/public'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/public/'
   },
   devServer: {
     publicPath: path.join(__dirname, '/public'),
@@ -26,6 +27,13 @@ module.exports = {
         exclude: /node_modules/,
         test: /\.js$/,
         loader: 'babel-loader'
+      },
+      {
+        test: /\.js?$/,
+        loader: 'babel-loader',
+        include: [
+          path.resolve('js')
+        ]
       }
     ]
   }

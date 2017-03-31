@@ -19,7 +19,7 @@
   },
   "scripts": {
     "dev": "webpack --watch & webpack-dev-server --hot",
-    "server": "export NODE_ENV='server' & node server.js"
+    "server": "export NODE_ENV=server & node server.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
