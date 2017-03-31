@@ -18,7 +18,8 @@
     "url": "https://github.com/fomeboy/React-Python-Boilerplate/issues"
   },
   "scripts": {
-    "dev": "webpack --watch & webpack-dev-server --hot"
+    "dev": "webpack --watch & webpack-dev-server --hot",
+    "server": "export NODE_ENV='server' & node server.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
