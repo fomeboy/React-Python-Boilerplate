@@ -14,10 +14,9 @@ const App = () => {
   return (
     <Provider store={store}>
       <div className='app'>
-        <Route exact path='/' component={(props) => <AsyncRoute props={props} loadingPromise={System.import('./Landing')} />}
-        />
-        <Route path='/testRoute' component={(props) => <RoutingPage {...props}/>} />
-        <Route path='/reduxPage' component={(props) => <ReduxPage {...props}/>} />
+        <Route exact path='/' component={(props) => <AsyncRoute props={props} loadingPromise={System.import('./Landing')} />} />
+        <Route path='/testRoute' component={(props) => <AsyncRoute props={props} loadingPromise={System.import('./RoutingPage.js')} />} />
+        <Route path='/reduxPage' component={(props) => <AsyncRoute props={props} loadingPromise={System.import('./ReduxPage.js')} />} />
       </div>
     </Provider>
   )
