@@ -1,6 +1,6 @@
 webpackJsonp([0],{
 
-/***/ 287:
+/***/ 289:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -14,7 +14,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var Landing = __WEBPACK_IMPORTED_MODULE_0_react___default.a.createClass({
   displayName: 'Landing',
   render: function render() {
-    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h2', null, 'Welcome to React/Python boilerplate!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], { to: '/testRoute' }, 'Navigate to another url'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], { to: '/reduxPage' }, 'Test redux component'));
+    return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('div', null, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('h2', null, 'Welcome to React/Python boilerplate!'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], { to: '/testRoute' }, 'Navigate to another url'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], { to: '/reduxPage' }, 'Test redux component'), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('br', null), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_react_router_dom__["c" /* Link */], { to: '/d3Page' }, 'D3 component'));
   }
 });
 

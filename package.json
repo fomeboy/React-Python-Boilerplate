@@ -19,14 +19,15 @@
   },
   "scripts": {
     "dev": "webpack --watch & webpack-dev-server --hot",
-    "server": "NODE_ENV=server node server.js"
+    "server": "NODE_ENV=server nodemon server.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
+    "d3": "^4.8.0",
     "express": "4.14.0",
+    "global": "^4.3.1",
     "history": "^4.4.0",
     "lodash": "4.16.2",
-    "global": "^4.3.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",

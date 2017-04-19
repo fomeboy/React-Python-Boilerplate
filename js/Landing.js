@@ -10,6 +10,9 @@ const Landing = React.createClass({
         <br/>
         <br/>
         <Link to='/reduxPage'>Test redux component</Link>
+        <br/>
+        <br/>
+        <Link to='/d3Page'>D3 component</Link>
       </div>
     )
   }
